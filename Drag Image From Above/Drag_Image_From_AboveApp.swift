@@ -11,7 +11,7 @@ import SwiftUI
 struct Drag_Image_From_AboveApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            GridOfImageView()
         }
     }
 }

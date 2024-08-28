@@ -1,10 +1,3 @@
-//
-//  ImageView.swift
-//  Drag Image From Above
-//
-//  Created by dwi prasetyo on 28/08/24.
-//
-
 import SwiftUI
 
 struct ImageView: View {
@@ -67,6 +60,7 @@ struct ImageView: View {
                 }
             })
             .opacity(isDragging ? 0.9 : 1.0)
+            .zIndex(image.zIndex)
             .scaleEffect(isDragging ? 1.2 : 1.0)
             .offset(dragAmount)
             .scaleEffect(isTapped ? 1.1 : 1.0)
